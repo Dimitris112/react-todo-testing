@@ -1,4 +1,5 @@
 import { useState } from "react";
+import TodoItem from "./TodoItem";
 
 export default function Todo() {
   const [todo, setTodo] = useState("");
@@ -20,7 +21,9 @@ export default function Todo() {
         />
         <button type="submit">Add</button>
       </form>
-      {console.log(todos)}
+      {todos.map((item) => (
+        <TodoItem item={item} key={item} />
+      ))}
     </div>
   );
 }
