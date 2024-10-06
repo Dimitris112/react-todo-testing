@@ -1,4 +1,5 @@
 import InlineComponent from "./Components/InlineComponent";
+import OutlineComponent from "./Components/OutlineComponent";
 import Todo from "./Components/Todo";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       {/* <Todo /> */}
       <InlineComponent />
+      <OutlineComponent />
     </div>
   );
 }
